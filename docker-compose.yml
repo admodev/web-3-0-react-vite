@@ -36,7 +36,7 @@ services:
 
   client:
     depends_on:
-      - client
+      - smart_contract
     build:
       context: ./client
       args:
