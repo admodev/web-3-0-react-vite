@@ -1,11 +1,20 @@
-import React from "react";
+import React from 'react'
+
+// Components
+import { Footer, Navbar, Services, Transactions, Welcome } from './components'
 
 const App = () => {
-  return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Web 3.0</h1>
-    </div>
-  );
-};
+	return (
+		<div className='min-h-screen'>
+			<div className='gradient-bg-welcome'>
+				<Navbar />
+				<Welcome />
+			</div>
+			<Services />
+			<Transactions />
+			<Footer />
+		</div>
+	)
+}
 
-export default App;
+export default App
